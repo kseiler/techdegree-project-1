@@ -215,6 +215,11 @@ ul.skills {
   right: 30px;
 }
 
+#background img {
+  width: 100%;
+  height: auto;
+}
+
 /* Styles for larger screens */
 @media screen and (min-width: 720px) {
   
