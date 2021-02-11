@@ -1,0 +1,253 @@
+/* Global Layout Set-up */
+* { 
+  box-sizing: border-box;
+}
+  
+body {
+  margin: 0;
+  padding: 55px 0 0;
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+  background: #f6f6f6;
+}
+
+section, .sp {
+  padding: 40px 24px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer {
+  width: 100%;
+  min-height: 30px;
+  padding: 20px 40px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+}
+
+footer .wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+footer .copyright {
+  top: -8px;
+  font-size: .75em;
+}
+
+footer ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer ul li {
+  display: inline-block;
+}
+
+a.social {
+  display: inline-block;
+  text-indent: -9999px;
+  margin-left: 5px;
+  width: 30px;
+  height: 30px;
+  background-size: 30px 30px;
+  opacity: 1;
+  transition: all .5s;
+}
+a.twitter {
+  background-image: url(images/twitter.svg);
+}
+a.linkedin {
+  background-image: url(images/linkedin.svg);
+}
+a.github {
+  background-image: url(images/github.svg);
+}
+a.social:hover {
+  opacity: .6;
+}
+.clearfix {
+  clear: both;
+}
+
+/* Link Styles */
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+a:hover {
+  color: #2a5ce4;
+}
+
+/* Text Styles */
+
+h1, h2, h3 {
+  color: #333;
+  line-height: 1.25;
+  margin-bottom: 10px;
+}
+
+.company {
+  margin-top: 0;
+}
+
+.date {
+  font-size: .75em;
+  margin-bottom: 5px;
+  color: #999;
+}
+
+.role {
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.description {
+  margin-top: 5px;
+}
+
+/* Section Styles */
+
+.main-nav {
+  width: 100%;
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  background-color: rgba(255,255,255,0.72);
+  min-height: 30px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  text-align: center;
+  border-bottom: 1px solid rgba(0,0,0,0.1)
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  font-weight: 700;
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.nav .name {
+    display: block;
+    margin-right: auto;
+    color: #333;
+}
+.nav li {
+  padding: 5px 10px 10px 10px;
+}
+.nav a {
+  transition: all .25s;
+}
+.nav a:hover {
+  color: #777;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('images/kingCountyLibrary.jpg') no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  text-align: center;
+  min-height: 364px;
+}
+
+header .info {
+  min-width: 250px;
+  max-width: 424px;;
+  padding: 30px;
+  background-color: white;
+}
+
+header .profile-image {
+  margin-top: -105px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.location {
+  color: #999;
+  line-height: 1;
+  margin-top: 0;
+}
+
+.card {
+  padding: 30px;
+  flex: 1;
+  position: relative;
+  text-align: left;
+  background: #fff;
+  transition: all .5s;
+  margin-right: 10px;
+  margin-bottom: 24px;
+}
+
+.card:last-of-type {
+  margin-right: 0;
+}
+
+ul.skills {
+  padding: 0;
+}
+
+.skills li {
+  border-radius: 18px;
+  display: inline-block;
+  background: #2a5ce4;
+  color: white;
+  padding: 8px 16px;
+  margin: 2px;
+}
+
+.logo {
+  width: 48px;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+/* Styles for larger screens */
+@media screen and (min-width: 720px) {
+  
+  .flex {
+      display: -ms-flexbox;      /* TWEENER - IE 10 */
+      display: flex; 
+      max-width: 1200px;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      margin: 0 auto;
+  }
+
+  .nav {
+    max-width: 1200px;
+    padding: 0 30px;
+  }
+
+  header {
+    min-height: 470px;
+  }
+
+  main p {
+    line-height: 1.6;
+  }
+
+  section, .sp {
+    padding: 50px 40px;
+  }
+
+  footer {
+    font-size: 1.3em;
+    margin: auto 0;
+  }
+
+}
+
